@@ -1,0 +1,55 @@
+/* CSS Document */
+
+/* Hamburguer Menu Snippet */
+:root {
+    --mainBorder: 2px solid #222;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav {
+    height: 80px;
+    border-top: var(--mainBorder);
+    border-bottom: var(--mainBorder);
+    background-color: aquamarine;
+  
+  }
+  
+  .hamburger-icon svg {
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Responsive Side Nav*/
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #343434;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    z-index: 1;
+  }
+
+.side-nav li {
+display: block;
+}
+
+.side-nav li a {
+color: #d900ff;
+}
+
+
+

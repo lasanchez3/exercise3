@@ -1,0 +1,48 @@
+/* CSS Document */
+
+/* Hamburguer Menu Snippet */
+:root {
+    --mainBorder: 2px solid #222;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav {
+    height: 80px;
+    border-top: var(--mainBorder);
+    border-bottom: var(--mainBorder);
+    background-color: aquamarine;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin : 10px 20px 0 0;
+    text-decoration: none;
+  }
+  
+  .main-nav li a {
+    font-size: 1.7em;
+    color: #222;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+  }
+  
+  .main-nav li a:hover {
+    color: #be2dd4;
+  }
+
+  @media (max-width: 800px) {
+    .main-nav li {
+      display: block;
+    }
+    .nav {
+        height: 190px;
+    }
+  }
